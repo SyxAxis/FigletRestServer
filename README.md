@@ -3,6 +3,8 @@ Produce figlet output from a REST server
 
 Yet another example of me wasting my time while learning Go.
 
+Once compiled the font files are embedded, so you have a standalone binary with all you need.
+
 Fire it up 
 
 Either get the list of fonts:
