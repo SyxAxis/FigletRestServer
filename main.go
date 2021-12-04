@@ -127,5 +127,8 @@ func main() {
 	myrouter.HandleFunc("/v1/getfontlist", restListAvailableFonts).Methods("GET")
 
 	log.Println("Started FiggyServer...")
+	log.Printf("http://localhost:%v/v1/genmsg      [ POST JSON ( fontname / message ) ]", strconv.Itoa(*flgPort))
+	log.Printf("http://localhost:%v/v1/getfontlist [ GET ]", strconv.Itoa(*flgPort))
+	log.Println("Ready...")
 	http.ListenAndServe(":"+strconv.Itoa(*flgPort), myrouter)
 }
